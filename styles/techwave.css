@@ -1,0 +1,112 @@
+
+/* *body{
+    margin:0;
+    padding:0;} */
+
+/* Shared styles */
+
+
+.display-flex{
+    display: flex;
+    list-style: none;
+}
+.btn-gradient{
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+   padding: 10px 12px;
+  /* background: #9f86af; */
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 30%, rgba(253, 29, 29, 1) 55%, rgba(252, 147, 61, 1) 73%, rgba(252, 176, 69, 1) 84%);
+    color: white;
+   
+
+}
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* NAvbar Styles */
+.brand{
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+.navbar {
+    justify-content: space-between;
+    align-content: center;
+    border: solid 2px red;
+} 
+.nav-links{
+font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+ 
+}
+.nav-items{
+    list-style: none;
+    margin-right: 50px;
+    
+}
+.navbar .banner-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Banner section styles */
+.image-part{
+    position: relative;
+    
+} 
+.btn-regular{
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px 12px;
+    border: 1px solid green;
+    color: green;
+
+}
+.image-part.bg-img-1{ 
+   position:relative;
+   z-index: 1;
+}
+.bg-img-3{
+    position: absolute;
+    z-index: 3;
+    /* background-color: aqua; */
+    width: 10%;
+    top: -5px;
+    left: 70px;
+    top: 50px;
+    
+}
+.bg-img-2{
+    position: absolute;
+    z-index: 2;
+    width: 20%;
+    top: -15px;
+    
+}
+/* About section Style */
+.rating-container{
+    max-width: 100%;
+    background-color:antiquewhite;
+}
+.rating-corner{
+    margin: 0 auto;
+    border: 2px solid red;
+    gap: 30px;
+}
+.rate-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(104, 230, 104);
+}
+.description{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color:cadetblue;
+}
