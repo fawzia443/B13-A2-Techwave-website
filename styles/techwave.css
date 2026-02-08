@@ -1,112 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* *body{
-    margin:0;
-    padding:0;} */
-
-/* Shared styles */
-
-
-.display-flex{
-    display: flex;
-    list-style: none;
+:root {
+  --primary-color: #1a0b2e;
+  --secondary-color: #412567;
+  --white: #ffffff;
+  --gradient: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
 }
-.btn-gradient{
-    font-size: 1rem;
-    border: none;
-    border-radius: 12px;
-    text-align: center;
-   padding: 10px 12px;
-  /* background: #9f86af; */
-  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 30%, rgba(253, 29, 29, 1) 55%, rgba(252, 147, 61, 1) 73%, rgba(252, 176, 69, 1) 84%);
-    color: white;
-   
-
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.6;
+}
+/* share style */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.main{
-    max-width: 1440px;
-    margin: 0 auto;
+/* Hero section styles */
+.hero-section {
+  height: 760px;
+  background-image: url("../assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-/* NAvbar Styles */
-.brand{
-    font-size: 1rem;
-    font-weight: 600;
-    
+/* same as flex and grid items */
+/* .hero-content {
+  display: grid;
+  place-items: center;
+  text-align: center;
+} */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 101px 0;
 }
-.navbar {
-    justify-content: space-between;
-    align-content: center;
-    border: solid 2px red;
-} 
-.nav-links{
-font-size: 1.25rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 500;
- 
+.hero-image {
+  position: relative;
 }
-.nav-items{
-    list-style: none;
-    margin-right: 50px;
-    
+.hero-image .b-mic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.navbar .banner-container{
-    max-width: 1440px;
-    margin: 0 auto;
+.hero-image .new-badge {
+  position: absolute;
+  background-color: chartreuse;
+  top: 25px;
+  right: 25px;
+  padding: 8px 16px;
+  border-radius: 996px;
+  text-transform: uppercase;
 }
-/* Banner section styles */
-.image-part{
-    position: relative;
-    
-} 
-.btn-regular{
-    border-radius: 12px;
-    text-align: center;
-    padding: 10px 12px;
-    border: 1px solid green;
-    color: green;
+.banner-mid {
+  width: 525px;
+  height: 390px;
+  border: 2px solid red;
+  padding: 0 100px;
+}
+/* .b_circle {
+  width: 325px;
+  height: 350px;
+} */
+/* .b-mic {
+  height: 200px;
+  width: 200px;
+} */
+.banner-description {
+  text-align: center;
+  color: red;
+}
+.btn-regular {
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  align-items: center;
+}
 
-}
-.image-part.bg-img-1{ 
+/* .image-part.bg-img-1{ 
    position:relative;
    z-index: 1;
-}
-.bg-img-3{
+} */
+/* .bg-img-3{
     position: absolute;
     z-index: 3;
-    /* background-color: aqua; */
+    background-color: aqua; 
     width: 10%;
     top: -5px;
     left: 70px;
-    top: 50px;
+    top: 50px; 
     
-}
-.bg-img-2{
+}  */
+/* .bg-img-2{
     position: absolute;
     z-index: 2;
     width: 20%;
     top: -15px;
     
-}
+} */
 /* About section Style */
-.rating-container{
-    max-width: 100%;
-    background-color:antiquewhite;
+.rating-container {
+  max-width: 100%;
+  background-color: antiquewhite;
 }
-.rating-corner{
-    margin: 0 auto;
-    border: 2px solid red;
-    gap: 30px;
+.rating-corner {
+  margin: 0 auto;
+  border: 2px solid red;
+  gap: 30px;
 }
-.rate-heading{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgb(104, 230, 104);
+.rate-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(104, 230, 104);
 }
-.description{
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 500;
-    color:cadetblue;
+.description {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: cadetblue;
 }
