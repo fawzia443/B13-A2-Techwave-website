@@ -163,3 +163,93 @@ mar
   font-weight: 500;
   color: var(--white);
 }
+/* why choose Section related styles */
+.choose-section {
+  background-color: var(--secondary-color);
+  max-height: 1121px;
+  padding: 100px 120px;
+  color: var(--white);
+}
+.choose-main-heading {
+  font-weight: 600px;
+  font-size: 3rem;
+  text-align: center;
+}
+.choose-image {
+  width: 50px;
+  height: 50px;
+  margin: 40px 0 16px 40px;
+  /* margin-bottom: 16px; */
+}
+.heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 24px;
+}
+
+/* .choose-content-headphone {
+  grid-area: headphone;
+}
+.choose-content-device {
+  grid-area: device;
+}
+.choose-content-location {
+  grid-area: location;
+}
+.choose-content-book {
+  grid-area: book;
+}
+.choose-content-zap {
+  grid-area: zap;
+} */
+/* .main-container {
+  margin-top: 40px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+} */
+.content {
+  margin-top: 40px;
+  display: grid;
+  /* justify-items: center; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.headphone {
+  grid-column: span 1;
+  grid-row: span 3;
+  border: 1px solid coral;
+  border-radius: 10px;
+}
+.device {
+  grid-column: span 2;
+  grid-row: span 2;
+  border: 1px solid coral;
+  border-radius: 10px;
+}
+.location {
+  grid-column: span 2;
+  grid-row: span 2;
+  border: 1px solid coral;
+  border-radius: 10px;
+}
+.zap {
+  grid-column: span 2;
+  grid-row: span 1;
+  border: 1px solid coral;
+  border-radius: 10px;
+}
+.book {
+  grid-column: span 1;
+  grid-row: span 1;
+  border: 1px solid coral;
+  border-radius: 10px;
+}
