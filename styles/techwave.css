@@ -301,3 +301,30 @@ mar
   background-color: var(--primary-color);
   padding: 5px;
 }
+/* Techwave section related styles */
+.techwave-section {
+  background-image: url("../assets/footer-bg.png");
+}
+
+.tech-heading {
+  font-size: 3rem;
+  font-weight: 700px;
+  color: var(--green);
+  text-align: center;
+}
+.tech-items {
+  justify-content: center;
+  gap: 8px;
+}
+.tech-links img {
+  background-color: aqua;
+  height: 20px;
+  width: 20px;
+  /* gap: 8px; */
+  align-items: center;
+}
+.tech-links p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+}
