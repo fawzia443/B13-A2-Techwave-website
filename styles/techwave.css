@@ -122,12 +122,17 @@ mar
 }
 
 /* About section Style */
-.about-content {
-  height: 222px;
-  padding: 50px 200px 80px 200px;
-  /* border: 1px solid red; */
+.about {
   background-color: var(--primary-color);
 }
+
+.about-content {
+  height: 222px;
+  /* padding: 50px 200px 80px 200px; */
+
+  background-color: var(--primary-color);
+}
+
 .about-heading {
   font-size: 3rem;
   color: var(--white);
@@ -193,21 +198,6 @@ mar
   line-height: 24px;
 }
 
-/* .choose-content-headphone {
-  grid-area: headphone;
-}
-.choose-content-device {
-  grid-area: device;
-}
-.choose-content-location {
-  grid-area: location;
-}
-.choose-content-book {
-  grid-area: book;
-}
-.choose-content-zap {
-  grid-area: zap;
-} */
 /* .main-container {
   margin-top: 40px;
   display: grid;
@@ -327,4 +317,11 @@ mar
   font-size: 1rem;
   font-weight: 400;
   color: var(--white);
+}
+.footer-section {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
 }
