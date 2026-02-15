@@ -5,6 +5,7 @@
   --secondary-color: #412567;
   --white: #ffffff;
   --green: #00ff88;
+  --choose-background: #230e3d;
   --gradient: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
 }
 body {
@@ -15,6 +16,14 @@ body {
   font-weight: 400;
   line-height: 1.6;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 /* share style */
 .container {
   max-width: 1200px;
@@ -24,29 +33,48 @@ body {
 
 .display-flex {
   display: flex;
-  margin: 0 auto;
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.btn-gradient {
+  padding: 12px 16px;
+  border-radius: 100px;
+  /* height: 44px; */
+  background: var(--gradient);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
 }
 /* Navbar related styles */
 /* .navbar {
-mar
-  
+  position: sticky;
 } */
 .logo {
-  color: var(--primary-color);
-  margin-right: 200px;
-  font-weight: 600;
-  font-size: 2rem;
+  color: var(--white);
+  /* margin-right: 200px; */
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.header {
+  background-color: var(--primary-color);
 }
 .logo-gradient {
-  background-color: #ffffff;
-  color: var(--gradient);
-  font-weight: 600;
-  font-size: 2rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-links {
   list-style: none;
   gap: 32px;
   align-items: center;
+  color: var(--white);
+  text-decoration: none;
 }
 /* Hero section styles */
 .hero-section {
@@ -101,15 +129,6 @@ mar
   margin-top: 0;
   text-align: center;
 }
-.btn-gradient {
-  padding: 30px 12px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: var(--gradient);
-  cursor: pointer;
-  border: none;
-  font-size: 1rem;
-}
 
 .btn-regular {
   border-radius: 30px;
@@ -124,13 +143,17 @@ mar
 /* About section Style */
 .about {
   background-color: var(--primary-color);
+  padding: 50px 0 120px 0;
 }
 
 .about-content {
   height: 222px;
-  /* padding: 50px 200px 80px 200px; */
 
   background-color: var(--primary-color);
+}
+.about-devider {
+  border: 1px dotted #d1baba7e;
+  margin: 80px 0;
 }
 
 .about-heading {
@@ -170,20 +193,19 @@ mar
 }
 /* why choose Section related styles */
 .choose-section {
-  background-color: var(--secondary-color);
-  max-height: 1121px;
+  background-color: var(--choose-background);
   padding: 100px 120px;
   color: var(--white);
 }
 .choose-main-heading {
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 3rem;
   text-align: center;
 }
 .choose-image {
   width: 50px;
   height: 50px;
-  margin: 40px 0 16px 40px;
+  /* margin: 40px 0 16px 40px; */
   /* margin-bottom: 16px; */
 }
 .heading {
@@ -205,43 +227,51 @@ mar
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 } */
-.content {
+.choose-content {
   margin-top: 40px;
   display: grid;
   /* justify-items: center; */
   grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   gap: 30px;
 }
-
-.headphone {
+.choose-box {
+  border-radius: 40px;
+  padding: 40px;
+  background-color: #3511654f;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.choose-box .description {
+  text-align: left;
+}
+.choose-box .heading {
+  margin-bottom: -12px;
+}
+.choose-box-1 {
   grid-column: span 1;
-  grid-row: span 3;
-  border: 1px solid coral;
-  border-radius: 10px;
-}
-.device {
-  grid-column: span 2;
   grid-row: span 2;
-  border: 1px solid coral;
-  border-radius: 10px;
 }
-.location {
-  grid-column: span 2;
-  grid-row: span 2;
-  border: 1px solid coral;
-  border-radius: 10px;
-}
-.zap {
+.choose-box-2 {
   grid-column: span 2;
   grid-row: span 1;
-  border: 1px solid coral;
-  border-radius: 10px;
+  max-height: 223px;
 }
-.book {
+.choose-box-3 {
+  grid-column: span 2;
+  grid-row: span 1;
+  max-height: 223px;
+}
+.choose-box-4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.choose-box-5 {
   grid-column: span 1;
   grid-row: span 1;
-  border: 1px solid coral;
-  border-radius: 10px;
 }
 /* feature-section Related Styles */
 
