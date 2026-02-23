@@ -197,6 +197,7 @@ h6 {
   padding: 100px 120px;
   color: var(--white);
 }
+
 .choose-main-heading {
   font-weight: 600;
   font-size: 3rem;
@@ -205,8 +206,6 @@ h6 {
 .choose-image {
   width: 50px;
   height: 50px;
-  /* margin: 40px 0 16px 40px; */
-  /* margin-bottom: 16px; */
 }
 .heading {
   font-size: 1.5rem;
@@ -220,21 +219,13 @@ h6 {
   line-height: 24px;
 }
 
-/* .main-container {
-  margin-top: 40px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-} */
 .choose-content {
   margin-top: 40px;
   display: grid;
-  /* justify-items: center; */
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
   gap: 30px;
 }
+
 .choose-box {
   border-radius: 40px;
   padding: 40px;
@@ -277,25 +268,41 @@ h6 {
 
 .feature-section {
   background-color: var(--primary-color);
+  padding: 120px 200px;
 }
+/* .feature-content {
+  padding: 120px 200px;
+} */
 .feature-heading1 {
   font-size: 2rem;
   font-weight: 600;
   color: var(--white);
   text-align: center;
+  margin-bottom: 40px;
+}
+/* .feature-items {
+
+} */
+.f-items-design {
+  height: 440px;
+
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
 }
 .f-item-heading {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--white);
-  /* text-align: center; */
 }
 .f-item-description {
   font-size: 1rem;
   font-weight: 400;
   color: var(--white);
   line-height: 24px;
-  /* text-align: center; */
+}
+.item-1 iframe {
+  border-radius: 0px 15px;
 }
 .time {
   color: var(--green);
@@ -354,4 +361,17 @@ h6 {
   font-size: 1rem;
   text-align: center;
   margin: 0 auto;
+}
+/* Responsive design for smalldevice */
+@media screen and (max-width: 576px) {
+  .navlink {
+    float: none;
+    display: block;
+  }
+}
+/* Responsive design for medium device */
+@media screen and (max-width: 992px) {
+  .choose-box {
+    flex-direction: column;
+  }
 }
